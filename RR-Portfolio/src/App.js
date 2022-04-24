@@ -5,7 +5,6 @@ import React, {useState} from 'react';
 import Navigation from './components/Navigation'
 import Header from './components/Header';
 import Page from './components/Page';
-//import Footer from './components/Footer';
 //import Resume from './components/Resume';
 
 function App() {
@@ -41,7 +40,6 @@ function App() {
         <Page currentPage={currentPage}>
         </Page>
       </main>
-      {/* <Footer /> */}
 
 
     </div>

@@ -7,7 +7,7 @@ function Project({ project }) {
   return (
     <section className="project" key={title}>
       <img
-        src={require(`../../assets/projects/${title}.jpg`)}
+        src={require(`../assets/profiles/${title}.jpg`)}
         alt={title}
         className="project-bg"
       />
