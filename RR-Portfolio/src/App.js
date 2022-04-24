@@ -1,20 +1,60 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navigation from './components/Navigation.js'
-import About from './components/About';
-import Contact from './components/Contact.js';
-import Resume from './components/Resume';
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import React, {useState} from 'react';
+import Navigation from './components/Navigation'
+import Header from './components/Header';
+import Page from './components/Page';
+//import Footer from './components/Footer';
+//import Resume from './components/Resume';
 
 function App() {
+  const [pages] = useState([
+    {
+      name: 'about'
+    },
+    {
+      name: 'portfolio'
+    },
+    {
+      name: 'contact'
+    },
+    {
+      name: 'resume'
+    }
+  ]);
+
+  const [currentPage, setCurrentPage] = useState(pages[0]);
+
+
   return (
-    <Router>
-      <Navigation />
-      <Switch>
-        <Route path='/' exact component={About} />
-        <Route path='/Contact' component={Contact} />
-        <Route path='/Resume' component={Resume} />
-      </Switch>
-    </Router>
+    <div>
+      <Header>
+        <Navigation 
+        pages={pages}
+        setCurrentPage= {setCurrentPage}
+        currentPage= {currentPage}
+        >
+        </Navigation>
+      </Header>
+      <main >
+        <Page currentPage={currentPage}>
+        </Page>
+      </main>
+      {/* <Footer /> */}
+
+
+    </div>
+    // <Router>
+    //   <Navigation />
+    //   <Switch>
+    //     <Route path='/' exact component={About} />
+    //     <Route path='/Contact' component={Contact} />
+    //     <Route path='/Portfolio' component={Portfolio} />
+    //     <Route path='/Resume' component={Resume} />
+    //   </Switch>
+    // </Router>
+
   );
 }
 
