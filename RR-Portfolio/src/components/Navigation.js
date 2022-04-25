@@ -9,11 +9,10 @@ function Navigation(props) {
   },[currentPage]);
   return (
   <div className="Navigation">
-    <h1>Ryan Robinson</h1>
     <ul className= "flex-row">
     {pages.map((Page)=>(
       <li className={`mx-5 ${currentPage.name===Page.name && 'navActive'}`} key={Page.name}>
-        <span onclick={()=> setCurrentPage(Page)}>
+        <span onClick={()=> setCurrentPage(Page)}>
           {capitalizeFirstLetter(Page.name)}
         </span>
       </li>

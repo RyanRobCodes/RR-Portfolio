@@ -3,12 +3,12 @@ import React from "react";
 // import { capitalizeFirstLetter } from '../utils/helpers';
 
 function Project({ project }) {
-  const { title, description, link, repo } = project;
+  const { name, description, link, repo } = project;
   return (
-    <section className="project" key={title}>
+    <section className="project" key={name}>
       <img
-        src={require(`../assets/profiles/${title}.jpg`)}
-        alt={title}
+        src={require(`../assets/projects/${name}.png`)}
+        alt={name}
         className="project-bg"
       />
       {/* <h1>{capitalizeFirstLetter(currentCategory.title)}</h1> */}
@@ -16,7 +16,7 @@ function Project({ project }) {
       {/* <ProjectList category={currentCategory.title} />     */}
       <div className="project-texts">
         <h3>
-          <a href={link}>{title}</a>
+          <a href={link}>{name}</a>
           <a href={repo}>Github</a>
         </h3>
         <p>{description}</p>

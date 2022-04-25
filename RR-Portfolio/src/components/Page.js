@@ -6,13 +6,13 @@ import Contact from './Contact';
 import Resume from './Resume';
 import { capitalizeFirstLetter } from '../utils/helpers';
 
-function Page ({currentPage}){
+function Page ({ currentPage }){
     const renderPage = ()=> {
         switch (currentPage.name){
             case 'about':
                 return <About />;
-            case 'portfolio':
-                return <Portfolio />;
+           case 'portfolio':
+               return <Portfolio />;
             case 'contact':
                 return <Contact />;
             case 'resume':
@@ -26,7 +26,7 @@ function Page ({currentPage}){
             <h2>{capitalizeFirstLetter(currentPage.name)}</h2>
             <PageContent>{renderPage()}</PageContent>
         </section>
-    )
+    );
 }
 export default Page;
 

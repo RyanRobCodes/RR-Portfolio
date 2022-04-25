@@ -5,7 +5,6 @@ function Resume() {
 
   return (
     <section className="my-5">
-      <h1 id="resume">Resume</h1>
       Download my <a href={ResumeDocument}>Resume</a>
       <div className="my-2">
           <h2>Front-end Proficiencies</h2>

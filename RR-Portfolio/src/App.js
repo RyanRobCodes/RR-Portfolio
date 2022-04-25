@@ -1,9 +1,10 @@
-import './App.css';
+//import './App.css';
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import React, {useState} from 'react';
-import Navigation from './components/Navigation'
 import Header from './components/Header';
+import Footer from './components/Footer';
+import Navigation from './components/Navigation'
 import Page from './components/Page';
 //import Resume from './components/Resume';
 
@@ -39,6 +40,7 @@ function App() {
       <main >
         <Page currentPage={currentPage}>
         </Page>
+        <Footer />
       </main>
 
 

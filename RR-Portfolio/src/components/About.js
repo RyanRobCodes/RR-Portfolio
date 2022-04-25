@@ -3,18 +3,16 @@ import coverImage from '../assets/about-picture/man-shadow.jpg';
 function About() {
     return (
       <section className="my-5">
-        <h1 id="about">About Me</h1>
         <img src={coverImage} className="my-2" style={{ width: "10%" }} alt="cover" />
         
         <div className="my-2">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
-            condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
-            mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.
-            Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique
-            justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea
-            dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
-            Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+          I am an exceptionally creative and dependable Entry Level Web Developer with a 
+          stellar customer service record and superb work ethic. Broadly and deeply 
+          knowledgeable in a wide variety of computer languages as well as the principles 
+          and techniques of website construction and maintenance. Highly adept at conveying 
+          complex technical information to a variety of professional and lay audiences 
+          in a clear and understandable manner.
           </p>
         </div>
       </section>
